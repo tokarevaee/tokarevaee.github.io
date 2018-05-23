@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vintage</title>
+    <link rel="preload" href="fonts/latoregular.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/latolight.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/latoitalic.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/latobold.woff2" type="font/woff2" as="font">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  </head>
+  <body>
+    <div class="none"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-fb" viewbox="0 0 34.02 34.02"><title>Facebook</title><path d="M17,34A17,17,0,1,0,0,17,17,17,0,0,0,17,34" style="fill:#547bbd"></path><path d="M12.9,14.13h1.76V12.42a4.57,4.57,0,0,1,.57-2.64A3.13,3.13,0,0,1,18,8.5a11.05,11.05,0,0,1,3.15.32l-.44,2.6a5.94,5.94,0,0,0-1.42-.21c-.68,0-1.3.25-1.3.93v2h2.8l-.2,2.54H18v8.84h-3.3V16.67H12.9Z" style="fill:#fff"></path></symbol><symbol id="icon-pin" viewbox="0 0 34.02 34.02"><title>Pin</title><path d="M17,34A17,17,0,1,0,0,17,17,17,0,0,0,17,34" style="fill:#eb5755"></path><path d="M17,8.46A8.5,8.5,0,0,0,13.6,24.75a7.47,7.47,0,0,1,.15-2l1.09-4.63a3.27,3.27,0,0,1-.27-1.35c0-1.26.73-2.2,1.64-2.2a1.14,1.14,0,0,1,1.15,1.28,18.31,18.31,0,0,1-.75,3,1.32,1.32,0,0,0,1.34,1.64c1.61,0,2.7-2.07,2.7-4.52,0-1.86-1.26-3.26-3.54-3.26a4,4,0,0,0-4.19,4.07,2.46,2.46,0,0,0,.56,1.67.41.41,0,0,1,.12.47l-.17.68a.29.29,0,0,1-.43.21,3.27,3.27,0,0,1-1.74-3.25c0-2.42,2-5.31,6.08-5.31a5.08,5.08,0,0,1,5.38,4.87c0,3.34-1.85,5.83-4.59,5.83A2.44,2.44,0,0,1,16.05,21s-.49,2-.6,2.34a7.1,7.1,0,0,1-.86,1.82A8.5,8.5,0,1,0,17,8.46" style="fill:#fff"></path></symbol><symbol id="icon-sprite-tw" viewbox="0 0 17.04 13.9"><title>Twitter</title><path d="M17,1.69a7,7,0,0,1-2,.55A3.5,3.5,0,0,0,16.58.31a7,7,0,0,1-2.22.85,3.5,3.5,0,0,0-6,3.19A9.92,9.92,0,0,1,1.16.7,3.5,3.5,0,0,0,2.24,5.37,3.5,3.5,0,0,1,.66,4.93h0A3.5,3.5,0,0,0,3.5,8.39a3.41,3.41,0,0,1-.92.12,3.46,3.46,0,0,1-.66-.06,3.5,3.5,0,0,0,3.26,2.43A7.07,7.07,0,0,1,0,12.33,9.94,9.94,0,0,0,15.3,4V3.51A7.09,7.09,0,0,0,17,1.7" style="fill:#3eb7b1"></path></symbol><symbol id="icon-tw" viewbox="0 0 34.02 34.02"><title>Twitter</title><path d="M17,34A17,17,0,1,0,0,17,17,17,0,0,0,17,34" style="fill:#79ccf0"></path><path d="M25.54,12.55a7,7,0,0,1-2,.55,3.5,3.5,0,0,0,1.54-1.93,7,7,0,0,1-2.22.85,3.5,3.5,0,0,0-6,3.19,9.92,9.92,0,0,1-7.2-3.65,3.5,3.5,0,0,0,1.08,4.67,3.5,3.5,0,0,1-1.58-.44v0A3.5,3.5,0,0,0,12,19.25a3.41,3.41,0,0,1-.92.12,3.46,3.46,0,0,1-.66-.06,3.5,3.5,0,0,0,3.26,2.43A7.07,7.07,0,0,1,8.5,23.19a9.94,9.94,0,0,0,15.3-8.37c0-.15,0-.3,0-.45a7.09,7.09,0,0,0,1.74-1.81" style="fill:#fff"></path></symbol></svg></div>
+    <header class="page-header">
+        <nav class="main-nav">
+          <ul class="main-nav__list1">
+            <li class="main-nav__item">
+              <a href="#about">about us</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#work">work</a>
+            </li>
+          </ul>
+          <img class="page-header__logo" src="img/logo.png" width="72" height="65" alt="Vintage">
+          <ul class="main-nav__list2">
+            <li class="main-nav__item">
+              <a href="#shop">shop</a>
+            </li>
+            <li class="main-nav__item main-nav__item--basket">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </nav>
+      <div class="mx-auto no-gutters">
+          <div class="page-header__img"></div>
+        </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="about__container container">
+          <div><img src="img/about-icon.png" width="40" height="33"></div>
+          <h3 id="about">A new generetion of vintage bike</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        </div>
+      </section>
+      <section class="vintage-oliva container">
+        <div class="row no-gutters" id="work">
+          <div class="vintage-oliva__image-big col-md-8"></div>
+          <div class="vintage-oliva__description col-md-4 no-gutters">
+            <div>
+              <img src="img/vintage-oliva-icon.png">
+              <h2>vintage oliva</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+              <img src="img/line.png">
+            </div>
+            <span class="vintage-oliva__triangle">
+              <picture>
+                <!--<source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">-->
+                <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">-->
+                <!--<source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">-->
+                <source media="(min-width: 992px)" srcset="img/1velo1.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/1velo1_768.jpg 1x">
+                <img class="vintage-oliva__velo1" src="img/1velo1.jpg" width="400" height="150">
+              </picture>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="la-borosa container">
+        <div class="row no-gutters">
+          <div class="la-borosa__description col-md-4 no-gutters">
+            <div>
+              <img src="img/la-boriosa-Icon.png">
+              <h2>La Boriosa</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+              <img src="img/line.png">
+            </div>
+            <span class="la-borosa__triangle">
+              <picture>
+                <source media="(min-width: 992px)" srcset="img/2velo1.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/2velo1_768.jpg 1x">
+                <img class="vintage-oliva__velo1" src="img/2velo1.jpg" width="400" height="150">
+              </picture>
+            </span>
+          </div>
+          <div class="la-borosa__image-big col-md-8 hidden-md-down visible-md"></div>
+        </div>
+      </section>
+      <section class="hulot container">
+        <div class="row no-gutters">
+          <div class="hulot__image-big col-md-4 no-gutters"></div>
+            <div class="col-md-4 hulot__description">
+            <div>
+              <img src="img/huliot-icon.png">
+              <h2>retrò Bike - M. Hulot</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+              <img src="img/line.png">
+            </div>
+              <span class="hulot__triangle">
+              <picture>
+                <source media="(min-width: 992px)" srcset="img/3velo1.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/3velo1_768.jpg 1x">
+                <img src="img/3velo1.jpg">
+              </picture>
+            </span>
+          </div>
+          <span class="hulot__velo3 col-md-4">
+          <picture>
+            <source media="(min-width: 992px)" srcset="img/3velo3.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/3velo3_768.jpg 1x">
+            <img src="img/3velo3.jpg">
+          </picture>
+            </span>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="container">
+          <div class="owl-theme owl-carousel slider__feedback">
+
+            <div class="slider__item">
+              <svg class="icon-tw" width="26px" height="25px" role="presentation">
+                <use xlink:href="#icon-sprite-tw"></use>
+              </svg>
+              <p class="slider__autor"><b>AOD New York  @aod</b> / 35 min</p>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+            </div>
+
+            <div class="slider__item">
+              <svg class="icon-tw" width="26px" height="25px" role="presentation">
+                <use xlink:href="#icon-sprite-tw"></use>
+              </svg>
+              <p class="slider__autor"><b>AOD New York  @aod</b> / 36 min</p>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+            </div>
+
+            <div class="slider__item">
+              <svg class="icon-tw" width="26px" height="25px" role="presentation">
+                <use xlink:href="#icon-sprite-tw"></use>
+              </svg>
+              <p class="slider__autor"><b>AOD New York  @aod</b> / 37 min</p>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+            </div>
+
+            <div class="slider__item">
+              <svg class="icon-tw" width="26px" height="25px" role="presentation">
+                <use xlink:href="#icon-sprite-tw"></use>
+              </svg>
+              <p class="slider__autor"><b>AOD New York  @aod</b> / 37 min</p>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+            </div>
+
+          </div>
+          <!--<div class="owl-nav">-->
+            <!--<div class="owl-prev">prev</div>-->
+            <!--<div class="owl-next">next</div>-->
+          <!--</div>-->
+        </div>
+      </section>
+      <section class="shop" id="shop">
+        <div class="container">
+          <div class="shop__photo">
+            <div class="row no-gutters">
+              <div class="col-md-4 row no-gutters">
+                <img class="col-md-6" src="img/shop2.jpg">
+                <img class="col-md-6" src="img/shop3.jpg">
+                <img class="col-md-12" src="img/shop1.jpg">
+              </div>
+              <img class="col-md-2" src="img/shop4.jpg">
+              <img class="col-md-2" src="img/shop5.jpg">
+              <div class="col-md-4 row no-gutters">
+                <img class="col-md-12" src="img/shop-bg.jpg">
+                <img class="col-md-6" src="img/shop6.jpg">
+                <img class="col-md-6" src="img/shop7.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="shop__btn--wrapper container">
+            <a href="#" class="btn shop__btn">Discover the shop</a>
+          </div>
+        </div>
+      </section>
+      <section class="subscription" id="contact">
+        <div class="container subscription__wrapper">
+          <img src="img/logo.png" width="72" height="65" alt="Vintage">
+          <p>Stay on the saddle!</p>
+          <form>
+            <input type="email" placeholder="enter your email...">
+            <button class="subscription__btn" type="submit">Go</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+        <section class="contacts-footer col-sm-6 col-md-4">
+          <b>AOD New York</b>
+          <p>2250 Lexington Avenue<br>
+          New York, NY 10035  - info@domain.com</p>
+        </section>
+        <section class="social-footer col-sm-6 col-md-4">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg class="icon-tw" width="26px" height="25px" role="presentation">
+              <use xlink:href="#icon-tw"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg class="icon-fb" width="26px" height="25px" role="presentation">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Мы в Пин</span>
+            <svg class="icon-pin" width="26px" height="25px" role="presentation">
+              <use xlink:href="#icon-pin"></use>
+            </svg>
+          </a>
+        </section>
+      </div>
+      </div>
+    </footer>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>$(document).ready(function(){
+      $('.owl-carousel').owlCarousel();
+    });</script>
+    <!--<script src="js/script.min.js"></script>-->
+  </body>
+</html>
+
