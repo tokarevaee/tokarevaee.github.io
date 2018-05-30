@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MyTour/Настройки интересов</title>
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/opensanssemibold.woff2" type="font/woff2" as="font">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="page-interesting">
+    <header>
+      <div class="header__wrapper">
+        <div class="header container">
+          <div class="header__logo col-3  col-sm-2 px-0"><a href="#">MyTour</a></div>
+          <nav class="main-nav col-10 px-0">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#">Моя лента</a></li>
+              <li class="main-nav__item main-nav__item--active"><a href="#">Интересы</a></li>
+              <li class="main-nav__item"><a href="#">Направления</a></li>
+              <li class="main-nav__item"><a href="#">Подбор тура</a></li>
+              <li class="main-nav__item"><a href="#">Заявка</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <section class="customize-interests__wrapper container">
+        <div class="customize-interests row mx-0">
+
+          <div class="customize-interests__title col-10 offset-md-2">
+            <h1>Настройки интересов</h1>
+          </div>
+
+        <div class="customize-interests__main col-10 offset-md-2 px-0">
+          <div class="customize-interests__collection row mx-0">
+            <ul class="row mx-0">
+              <li class="customize-interests__item"><button type="button">Подборка васи</button></li>
+              <li class="customize-interests__item customize-interests__item--active"><button type="button"><span>Подборка 123</span></button></li>
+              <li class="customize-interests__item"><button type="button"><span>Подборка 20.03</span></button></li>
+              <li class="customize-interests__item"><button type="button"><span>Подборка #1</span></button></li>
+            </ul>
+            <button class="customize-interests__add ml-auto" type="button">Добавить подборку</button>
+          </div>
+            <form class="form-tour-order mx-0" action="#" name="form-tour-order">
+              <div class="row mx-0">
+                <div class="form-tour-order__name">
+                  <label for="name">Название подборки</label>
+                  <input id="name" type="text" placeholder="Подборка" value="Подборка 123">
+                </div>
+                <div class="form-tour-order__city">
+                  <label for="city">Ваш город</label>
+                  <input id="city" type="text" placeholder="Город" value="Санкт-Петербург">
+                  <span class="form-tour-order__city--close"></span>
+                </div>
+                <a class="btn-result ml-auto" href="#">Смотреть результаты</a>
+              </div>
+
+              <div class="form-tour-order__count-group">
+                <p>Вы можете задать несколько стран или регионов для одной подборки</p>
+                <div class="form-tour-order__count">
+                  <span class="form-tour-order__region">Юго-Восточная Азия</span>
+                  <div class="row mx-0">
+                    <div class="form-tour-order__item-count form-tour-order__item-count--tai">
+                      Тайланд
+                    </div>
+                    <div class="form-tour-order__item-count form-tour-order__item-count--vetn">
+                      Вьетнам
+                    </div>
+                    <div class="form-tour-order__item-count form-tour-order__item-count--indone">
+                      Индонезия
+                    </div>
+                  </div>
+                </div>
+                <div class="form-tour-order__btn">
+                  <button class="btn__add btn__add--region" type="button"><span>Добавить регион</span></button>
+                  <button class="btn__add btn__add--count" type="button"><span>Добавить страны</span></button>
+                </div>
+              </div>
+
+              <div class="form-tour-order__options">
+
+                <div class="form-tour-order__options-items">
+                  <label for="date-fly">Дата вылета</label>
+                  <div class="form-tour-order__select-container">
+                    <input type="text" id="date-fly" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" placeholder="13 января,ПН - 19 явнаря, СБ">
+                  </div>
+                </div>
+
+                <div class="form-tour-order__options-items">
+                  <label for="long">На сколько</label>
+                  <div class="form-tour-order__select-container">
+                    <select id="long">
+                      <option value="7-14">7 — 14 ночей</option>
+                      <option value="14 — 21">14 — 21 ночей</option>
+                      <option value="21 — 28">21 — 28 ночей</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-tour-order__options-items">
+                  <label for="number-visitors">Колическтво гостей</label>
+                  <div class="form-tour-order__select-container">
+                    <select id="number-visitors">
+                      <option value="1,0" selected="">1 взрослых</option>
+                      <option value="2,0">2 взрослых</option>
+                      <option value="3,0">3 взрослых</option>
+                      <option value="1,2">1 взрослых, 2 детей</option>
+                      <option value="2,2" selected="">2 взрослых, 2 детей</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-tour-order__options-items">
+                  <label for="cost">Стоимость тура</label>
+                  <div class="form-tour-order__select-container">
+                    <select id="cost">
+                      <option value="50">1 000 Р — 50 000 Р</option>
+                      <option value="150" selected="">50 000 Р — 150 000 Р</option>
+                      <option value="250">150 000 Р — 250 000 Р</option>
+                      <option value="350">250 000 Р — 350 000 Р</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-tour-order__options-items">
+                  <label for="test">Категория отелей от</label>
+                  <div class="form-tour-order__select-container form-tour-order__select-container--class">
+                    <select id="test" name="test">
+                      <option value="5">5</option>
+                      <option value="4">4</option>
+                      <option value="3">3</option>
+                      <option value="2">2</option>
+                      <option value="l">1</option>
+                    </select>
+                   </div>
+                </div>
+
+                <div class="form-tour-order__options-items">
+                  <label for="top-hotels">Рейтинг TopHotels</label>
+                  <div class="form-tour-order__select-container form-tour-order__select-container--top-hotels">
+                    <select id="top-hotels">
+                      <option value="4.75">Не ниже 4.75</option>
+                      <option value="audi" selected="">Не ниже 4.5</option>
+                      <option value="4.25">Не ниже 4.25</option>
+                      <option value="4.0">Не ниже 4.0</option>
+                      <option value="3.5">Не ниже 3.5</option>
+                      <option value="3.0">Не ниже 3.0</option>
+                      <option value="none">Рейтинг не важен</option>
+                    </select>
+                   </div>
+                </div>
+
+                <div class="form-tour-order__options-items">
+                  <label for="food">Тип питания</label>
+                  <div class="form-tour-order__select-container form-tour-order__select-container--food">
+                    <select id="food">
+                      <option value="all">Только «Всё включено»</option>
+                      <option value="b">Завтраки и полупансион</option>
+                      <option value="any" selected="">Любой</option>
+                    </select>
+                   </div>
+                </div>
+
+                <div class="form-tour-order__options-items">
+                  <label for="location">Расположение</label>
+                  <div class="form-tour-order__select-container form-tour-order__select-container--label">
+                    <select id="location">
+                      <optgroup label="Пляжные">
+                        <option value="beach1" selected="">Пляжные, 1-я линия</option>
+                        <option value="beach2">Пляжные, 2-я линия</option>
+                        <option value="beach3">Пляжные, 3-я линия</option>
+                        <option value="beach4">Пляжные, 4-я линия</option>
+                      </optgroup>
+                      <optgroup label="Гороские">
+                        <option value="beach1">Городские, близко к центру</option>
+                        <option value="beach2">Городские, центр</option>
+                      </optgroup>
+                    </select>
+                   </div>
+                </div>
+                <button class="btn__del ml-auto mt-auto" type="button"><span>Удалить подборку</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="container px-0">
+          <div class="footer row mx-0">
+            <div class="footer__address col-12 col-sm">
+              <b>Туристический проект</b>
+              <p>Москва, 1-й Щипковский переулок, д.1</p>
+              <a href="#">Показать на карте</a>
+            </div>
+            <div class="footer__time col-12 col-sm">
+              <p>Время работы офиса:</p>
+              <p>Будни 10:00 — 21:00</p>
+              <p>Выходные и праздники 11:00 — 17:00</p>
+            </div>
+            <div class="footer__phone col-12 col-sm">
+              <p>+7 495 585 55 55</p>
+              <a href="#">Обратная связь</a>
+            </div>
+            <div class="footer__social col-12 col-sm">
+              <a href="#" class="footer__vk"><img src="img/vk.png" width="20" height="20"><p>ВКонтакте</p></a>
+              <a href="#" class="footer__fb"><img src="img/fb.png" width="20" height="20"><p>Facebook</p></a>
+              <a href="#" class="footer__insta"><img src="img/insta.png" width="20" height="20"><p>Instagram</p></a>
+              <a href="#" class="footer__odnokl"><img src="img/odnokl.png" width="20" height="20"><p>Одноклассники</p></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="ml-auto"><p>Разработано командой TourAdmin © 2017</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+  </body>
+</html>
